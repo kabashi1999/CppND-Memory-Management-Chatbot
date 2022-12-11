@@ -66,8 +66,7 @@ ChatBot &ChatBot::operator=(ChatBot &source){
     }//copy assignment operator
     
     ChatBot::ChatBot(ChatBot &&source){
-      _image = new wxBitmap();
-      *_image = *source._image;
+      _image = source._image;
       _chatLogic = source._chatLogic;
       _chatLogic->SetChatbotHandle(this);
       _rootNode = source._rootNode;
@@ -80,8 +79,7 @@ ChatBot &ChatBot::operator=(ChatBot &source){
   ChatBot & ChatBot::operator=(ChatBot &&source){
     	if (this == &source)
             return *this;
-        _image = new wxBitmap();
-        *_image = *source._image;
+        _image = source._image;
         _chatLogic = source._chatLogic;
         _chatLogic->SetChatbotHandle(this);
         _rootNode = source._rootNode;

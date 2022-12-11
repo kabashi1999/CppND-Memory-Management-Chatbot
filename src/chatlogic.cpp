@@ -16,10 +16,7 @@ ChatLogic::ChatLogic()
 {
     //// STUDENT CODE
     ////
-
-    // create instance of chatbot
    
-
     ////
     //// EOF STUDENT CODE
 }
@@ -29,21 +26,7 @@ ChatLogic::~ChatLogic()
     //// STUDENT CODE
     ////
 
-    // delete chatbot instance
-   // delete _chatBot;
-
-    // delete all nodes
-//     for (auto it = std::begin(_nodes); it != std::end(_nodes); ++it)
-//     {
-//         //delete *it;
-//     }
-
-//     // delete all edges
-//     for (auto it = std::begin(_edges); it != std::end(_edges); ++it)
-//     {
-//         //delete *it;
-//     }
-
+    
     ////
     //// EOF STUDENT CODE
 }
